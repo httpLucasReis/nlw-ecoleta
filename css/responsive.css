@@ -19,6 +19,18 @@
   #page-home main {
     align-items: center;
   }
+
+  #page-search-results .cards {
+    grid-template-columns: 1fr;
+  }
+
+  #page-search-results .cards img {
+    height: 200px;
+  }
+
+  body::after {
+    display: none;
+  }
 }
 
 @media (max-width: 830px) {
@@ -73,5 +85,23 @@
   #page-home .content main {
     position: absolute;
     transform: translateY(180px);
+  }
+}
+
+@media(max-height: 620px){
+  #page-home .content header a {
+    position: absolute;
+    top: 555px;
+  }
+}
+
+@media(max-width: 520px){
+  #page-home .content main h1{
+    font-size: 30px;
+  }
+
+  #page-home .content main p{
+    font-size: 20px;
+    width: 300px;
   }
 }
