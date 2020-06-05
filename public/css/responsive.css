@@ -1,0 +1,105 @@
+@media (max-width: 900px) {
+    #page-home {
+        background-position-x: 70vw;
+    }
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+    #page-home header a {
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #page-home main {
+        align-items: center;
+    }
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    }
+    #page-search-results .cards img {
+        height: 200px;
+    }
+    body::after {
+        display: none;
+    }
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+    form .field-group .field+.field {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 830px) {
+    #page-home {
+        background-position-x: 70vw;
+    }
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+    #page-home header {
+        margin-bottom: -180px;
+    }
+    #page-home header a {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #page-home main {
+        align-items: center;
+    }
+}
+
+@media (min-width: 1700px) {
+    #page-home {
+        background-position-x: 42vw;
+    }
+}
+
+@media (min-height: 900px) {
+    #page-home {
+        background-position-y: 350px;
+    }
+    #page-home .content main {
+        position: absolute;
+        transform: translateY(420px);
+    }
+}
+
+@media (max-height: 700px) {
+    #page-home {
+        background-position-y: 125px;
+    }
+    #page-home .content main {
+        position: absolute;
+        transform: translateY(180px);
+    }
+}
+
+@media(max-height: 620px) {
+    #page-home .content header a {
+        position: absolute;
+        top: 555px;
+    }
+}
+
+@media(max-width: 520px) {
+    #page-home .content main h1 {
+        font-size: 30px;
+    }
+    #page-home .content main p {
+        font-size: 20px;
+        width: 300px;
+    }
+}
+
+@media(max-width: 600px) {
+    #page-create-point fieldset .items-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-row: 2fr;
+    }
+}

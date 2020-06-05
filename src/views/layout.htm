@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swapdisplay=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/main.css">
+
+    {# Recebe o conteudo do index.htm #}
+    {% block styles %}
+    {% endblock styles %}
+    
+    <link rel="stylesheet" href="/css/responsive.css">
+    
+    {# Definindo um title padrão para caso esse não exista. #}
+    {% block title %}
+      <title>Ecoleta</title>
+    {% endblock title %}
+</head>
+
+<body>
+    {# Utilizando uma variável para chamar um id dinamicamente#}
+    <div id="{{ pageId }}">
+      {% block content %}
+
+      {% endblock content %}
+    </div>
+
+    {# Modal do index.htm #}
+    {% block modal %}
+
+    {% endblock modal %}
+
+    {# javascript#}
+    {% block javascript %}
+    
+    {% endblock javascript %}
+
+</body>
+</html>
